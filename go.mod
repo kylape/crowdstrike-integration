@@ -1,11 +1,13 @@
 module github.com/kylape/crowdstrike-integration
 
-go 1.22.2
+go 1.23.0
+
+toolchain go1.23.8
 
 require (
 	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
 	github.com/blang/semver/v4 v4.0.0 // indirect
-	github.com/crowdstrike/gofalcon v0.13.5 // indirect
+	github.com/crowdstrike/gofalcon v0.0.0-unpublished // indirect
 	github.com/go-logr/logr v1.3.0 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-openapi/analysis v0.22.2 // indirect
@@ -29,8 +31,10 @@ require (
 	go.opentelemetry.io/otel v1.21.0 // indirect
 	go.opentelemetry.io/otel/metric v1.21.0 // indirect
 	go.opentelemetry.io/otel/trace v1.21.0 // indirect
-	golang.org/x/oauth2 v0.26.0 // indirect
+	golang.org/x/oauth2 v0.29.0 // indirect
 	golang.org/x/sync v0.5.0 // indirect
 	golang.org/x/sys v0.15.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/crowdstrike/gofalcon v0.0.0-unpublished => ../../gofalcon
